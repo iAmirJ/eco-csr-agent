@@ -184,7 +184,7 @@ Specialized in:
 
 ### Contact
 
-📞 WhatsApp: +92 305 1925331
+📞 Email: amirjaved1925@gmail.com
 
 🏢 Agency: Kodelix
 
