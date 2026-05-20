@@ -176,11 +176,11 @@ Graduate AI & Full-Stack Engineer
 
 Specialized in:
 
+- AI Based Apps
 - Enterprise RAG Systems
 - Autonomous Agents
 - LLM Applications
-- AI Workflow Automation
-- Knowledge Base Assistants
+- Custom Full-Stack Web Applications
 
 ### Contact
 
