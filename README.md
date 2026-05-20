@@ -6,38 +6,190 @@
 ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google)
 
+---
+
 ## 📖 Project Description
-The **Eco-CSR AI Consultant** is an enterprise-grade, autonomous AI application built to help businesses align sustainability with profitability. Moving away from generic AI chatbots, this agent implements a highly specialized **Retrieval-Augmented Generation (RAG)** framework. It dynamically processes dense corporate sustainability data, financial reports, and decarbonization case studies to generate actionable strategies that reduce operational costs, optimize resource management, and drive sustainable revenue growth.
 
-By utilizing advanced orchestration tools, the agent strictly grounds its intelligence in verified local vector databases. This specialized architecture completely prevents AI hallucinations and ensures that every response delivered to the client is secure, context-aware, and backed by factual corporate data.
+**Eco-CSR AI Consultant** is an enterprise-grade autonomous AI application built to help businesses align sustainability with profitability.
 
-## 🎥 Agent in Action
-![Eco-CSR Agent Demo](demo.gif)
+Instead of acting as a generic chatbot, this system uses a specialized **Retrieval-Augmented Generation (RAG)** architecture that processes:
 
-## ✨ Key Features
-* **High-Dimensional Vector Ingestion:** Leverages Google's state-of-the-art Gemini Embeddings (3072 dimensions) mapped into a Serverless Pinecone Vector Database for ultra-precise data mapping and semantic search.
-* **Stateful Multi-Turn Memory:** Engineered with LangGraph state machines and an SQLite persistence layer (`checkpoints.db`) to preserve deep conversational context across continuous, multi-turn enterprise consulting sessions.
-* **Production-Ready Resilience:** Equipped with automated rate-limiting guards and exponential backoff retry workflows to ensure uninterrupted interaction even during peak API resource loads.
-* **Executive Frontend Experience:** Delivered via a fully optimized, custom-styled Streamlit interface tailored for an intuitive corporate user experience.
+- Corporate sustainability reports
+- Financial documents
+- Decarbonization case studies
+- Internal knowledge bases
 
-## 🛠️ Tech Stack
-* **Frameworks:** LangChain, LangGraph Core
-* **LLM & Embeddings:** Google Gemini 2.5 Flash, Gemini Embedding Models (MRL Optimized)
-* **Vector Store:** Pinecone Serverless Database
-* **State Management:** SQLite Checkpointer Runtime
-* **Interface UI:** Streamlit Web Server (Custom CSS & HTML Injection)
+The agent generates actionable sustainability strategies to:
+
+✅ Reduce operational costs  
+✅ Optimize resource utilization  
+✅ Improve ESG alignment  
+✅ Support sustainable revenue growth
+
+The system grounds all responses using local vector databases to minimize hallucinations and ensure factual outputs.
 
 ---
 
-## 🚀 How to Run This Project Locally
+## 🎥 Agent in Action
 
-If you are cloning this repository for the first time, follow this complete technical setup guide to deploy and execute the application on your local workstation.
+![Eco-CSR Agent Demo](demo.gif)
 
-### Prerequisites
-Ensure your local environment has **Python 3.11 or higher** installed.
+---
 
-### 1. Clone the Repository
-Clone this project repository using Git and navigate straight into the project root directory:
+## ✨ Key Features
+
+### 🔹 High-Dimensional Vector Ingestion
+Uses **Gemini Embeddings (3072 dimensions)** with **Pinecone Serverless** for semantic retrieval.
+
+### 🔹 Stateful Multi-Turn Memory
+Built using:
+
+- LangGraph state machines
+- SQLite persistence
+- `checkpoints.db`
+
+Maintains conversation history across enterprise sessions.
+
+### 🔹 Production Resilience
+Includes:
+
+- Rate limiting protection
+- Exponential retry workflows
+- API stability handling
+
+### 🔹 Executive UI Experience
+Custom corporate dashboard using Streamlit with CSS styling.
+
+---
+
+## 🛠 Tech Stack
+
+### Frameworks
+- LangChain
+- LangGraph Core
+
+### LLM & Embeddings
+- Google Gemini 2.5 Flash
+- Gemini Embeddings (MRL Optimized)
+
+### Vector Store
+- Pinecone Serverless Database
+
+### State Management
+- SQLite Checkpointer Runtime
+
+### Frontend
+- Streamlit
+- Custom CSS
+- HTML Injection
+
+---
+
+# 🚀 Local Installation Guide
+
+## Prerequisites
+
+Install:
+
+- Python 3.11+
+
+---
+
+## 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/iAmirJ/eco-csr-agent.git
 cd eco-csr-agent
+```
+
+---
+
+## 2️⃣ Create Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Mac / Linux
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Configure Environment Variables
+
+Create `.env`
+
+```env
+GOOGLE_API_KEY=your_google_key
+PINECONE_API_KEY=your_pinecone_key
+```
+
+---
+
+## 5️⃣ Run Data Ingestion
+
+Place PDFs or sustainability reports inside project directory.
+
+Run:
+
+```bash
+python ingest.py
+```
+
+Wait for successful ingestion confirmation.
+
+---
+
+## 6️⃣ Launch Application
+
+```bash
+streamlit run app.py
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 💼 Custom AI Development Services
+
+**Aamir Javed**  
+Graduate AI & Full-Stack Engineer
+
+Specialized in:
+
+- Enterprise RAG Systems
+- Autonomous Agents
+- LLM Applications
+- AI Workflow Automation
+- Knowledge Base Assistants
+
+### Contact
+
+📞 WhatsApp: +92 305 1925331
+
+🏢 Agency: Kodelix
+
+📫 Available for freelance and enterprise projects
+
+---
+
+### ⭐ If you like this project, give it a star.
